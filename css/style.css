@@ -52,7 +52,7 @@ figure{
     saturate(209%) hue-rotate(189deg) 
     brightness(97%) contrast(90%);
 }
-.function-bar-icon-off:active{
+#function-bar li:active .function-bar-icon-off{
     filter: none;
 }
 .space-b-icon{
