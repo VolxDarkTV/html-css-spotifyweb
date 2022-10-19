@@ -32,6 +32,13 @@ figure{
     margin: 30px 0px;
     color: #d2d2d2;
 }
+.point-marker{
+    max-width: 10%;
+    min-height: 40px;
+    background-color: #adff2f;
+    position: relative;
+    left: -20px;
+}
 #function-bar li{
     display: flex;
     align-items: center;
