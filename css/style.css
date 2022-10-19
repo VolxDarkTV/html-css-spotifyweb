@@ -7,3 +7,75 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+
+/* NavBar */
+.nav-bar{
+    max-width: 200px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #000;
+    font-weight: bold;
+    /* DEBUG */
+    color: #fff;
+}
+
+
+/* Logo */
+figure{
+    width: 80%;
+}
+
+
+/* function-bar */
+#function-bar{
+    margin: 30px 0px;
+    color: #d2d2d2;
+}
+#function-bar li{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+.function-bar-icon{
+    font-size: 25px;
+}
+.space-b-icon{
+    margin-left: 8px;
+}
+
+/* style-point-OFF */
+#function-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+}
+
+
+
+/* Playlist */
+.playlist-title{
+    font-size: 16px;
+}
+.create-new-playlist{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    color: #717171;
+}
+.create-new-playlist i{
+    font-size: 40px;
+    color: #a3a3a3;
+}
+.nav-bar-playlist-name{
+    color: #717171;
+}
+.your-playlist{
+    display: flex;
+    flex-direction: column;
+    max-height: 330px;
+    margin-top: 20px;
+    gap: 20px;
+    overflow: auto;
+}
