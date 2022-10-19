@@ -86,3 +86,14 @@ figure{
     gap: 20px;
     overflow: auto;
 }
+
+
+
+/* Tool Bar */
+.tool-bar{
+    display: flex;
+    align-items: center;
+    min-width: 90vw;
+    min-height: 90px;
+    background-color: #717171;
+}
