@@ -48,6 +48,12 @@ figure{
 .function-bar-icon{
     font-size: 25px;
     max-width: 20%;
+    filter: invert(44%) sepia(0%) 
+    saturate(209%) hue-rotate(189deg) 
+    brightness(97%) contrast(90%);
+}
+.function-bar-icon-off:active{
+    filter: none;
 }
 .space-b-icon{
     margin-left: 8px;
