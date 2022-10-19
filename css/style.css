@@ -8,11 +8,23 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Main Box */
+
+.main-box{
+    display: flex;
+    height: calc(100vh - 90px);
+}
+/* Main */
+main{
+    width: calc(100% + 200px);
+    background-color: #adff2f;
+    padding: 30px;
+}
 
 /* NavBar */
 .nav-bar{
-    max-width: 200px;
-    min-height: 100vh;
+    min-width: 200px;
+    /* min-height: 100vh; */
     padding: 20px;
     background-color: #000;
     font-weight: bold;
@@ -94,7 +106,56 @@ figure{
     gap: 20px;
     overflow: auto;
 }
-
+/* Call to action */
+.call-to-action{
+    width: 180px;
+    position: absolute;
+    bottom: 100px;
+}
+.action{
+    width: 100%;
+    position: relative;
+}
+/* Installa App */
+.download-app{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    /* position: absolute;
+    bottom: 180px; */
+}
+/* LINE */
+.line{
+    min-width: 160px;
+    position: absolute;
+    bottom: 160px;
+    color: #fff;
+}
+/* Profile */
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* position: absolute;
+    bottom: 100px; */
+}
+.profile-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #808080;
+    background-image: url(../img/profile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.profile-image img{
+    width: 100%;
+    object-fit: contain;
+}
 
 
 /* Tool Bar */
@@ -105,6 +166,9 @@ figure{
     min-width: 90vw;
     min-height: 90px;
     background-color: #282828;
+    z-index: 500;
+    position: relative;
+    width: 100%;
 }
 
 /* song player */
@@ -166,7 +230,7 @@ figure{
     min-height: 45px;
     margin-right: 20px;
     /* DEBUG */
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .volume-player{
     display: flex;
@@ -177,6 +241,7 @@ figure{
 .function-icon{
     display: flex;
     gap: 20px;
+    color: #fff;
 }
 /* Volume Bar */
 .volume-setting-player{
