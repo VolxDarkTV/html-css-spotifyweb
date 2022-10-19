@@ -168,3 +168,13 @@ figure{
     /* DEBUG */
     background-color: #fff;
 }
+.volume-player{
+    display: flex;
+    align-items: center;
+    min-height: 45px;
+}
+/* Function Icon */
+.function-icon{
+    display: flex;
+    gap: 20px;
+}
