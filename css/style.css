@@ -153,11 +153,18 @@ figure{
 
 /* Player */
 .container-player{
-
+    min-width: 600px;
+    min-height: 70px;
+    /* DEBUG */
+    background-color: #adff2f;
 }
 
 
 /* Volume Player */
 .container-volume-player{
-
+    min-width: 250px;
+    min-height: 45px;
+    margin-right: 20px;
+    /* DEBUG */
+    background-color: #fff;
 }
