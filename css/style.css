@@ -178,3 +178,27 @@ figure{
     display: flex;
     gap: 20px;
 }
+/* Volume Bar */
+.volume-setting-player{
+    min-width: 100px;
+    height: 5px;
+    background-color: #6f6f6f;
+    border-radius: 40px;
+    margin-left: 10px;
+}
+.volume-bar{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 100%;
+    background-color: #adff2f;
+    border-radius: 40px;
+}
+/* volume-bar-move */
+.volume-bar-move{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
