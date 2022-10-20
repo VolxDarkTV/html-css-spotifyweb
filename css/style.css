@@ -30,6 +30,7 @@ main{
     font-weight: bold;
     /* DEBUG */
     color: #fff;
+    position: relative;
 }
 
 
@@ -106,16 +107,25 @@ figure{
     gap: 20px;
     overflow: auto;
 }
+
+
+.end-nav-bar{
+    width: 90%;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 0px;
+    background-color: #000;
+}
 /* Call to action */
-.call-to-action{
+/* .call-to-action{
     width: 180px;
     position: absolute;
     bottom: 100px;
-}
-.action{
+} */
+/* .action{
     width: 100%;
     position: relative;
-}
+} */
 /* Installa App */
 .download-app{
     font-size: 16px;
@@ -158,24 +168,28 @@ figure{
 }
 
 
+
 /* Tool Bar */
 .tool-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 90vw;
-    min-height: 90px;
+    width: 100vw;
+    max-height: 90px;
     background-color: #282828;
     z-index: 500;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    padding: 10px 20px;
 }
+
+
 
 /* song player */
 .container-song-player{
     min-width: 250px;
     min-height: 45px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     /* DEBUG */
     /* background-color: #adff2f; */
 }
@@ -220,7 +234,27 @@ figure{
     min-width: 600px;
     min-height: 70px;
     /* DEBUG */
-    background-color: #adff2f;
+    /* background-color: #ffb62f; */
+}
+.player{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+    color: #fff;
+}
+.time-line{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+.time-number{
+    font-size: 12px;
+    color: #fff;
+}
+.time-line-setting-player-margin{
+    width: 100%;
 }
 
 
@@ -228,7 +262,7 @@ figure{
 .container-volume-player{
     min-width: 250px;
     min-height: 45px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     /* DEBUG */
     /* background-color: #fff; */
 }
@@ -249,21 +283,28 @@ figure{
     height: 5px;
     background-color: #6f6f6f;
     border-radius: 40px;
+    cursor: pointer;
+}
+.volume-setting-player-margin{
     margin-left: 10px;
 }
 .volume-bar{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 30px;
+    width: 30%;
     height: 100%;
     border-radius: 40px;
     background-color: #adff2f;
 }
 /* volume-bar-move */
 .volume-bar-move{
+    display: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #000;
+}
+.volume-setting-player:hover .volume-bar-move{
+    display: block;
 }
