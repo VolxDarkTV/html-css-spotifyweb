@@ -107,7 +107,7 @@ main{
     /* background-color: #adff2f; */
 }
 .music-square{
-    max-width: 200px;
+    max-width: calc(100% / 6 - 40px);
     max-height: 100%;
     /* DEBUG */
     /* background-color: rgb(163, 56, 56); */
@@ -117,6 +117,9 @@ main{
 }
 .music-square img{
     width: 100%;
+}
+.music-square img:hover{
+    filter: brightness(40%);
 }
 /* SONG-TEXT */
 .song-text{
@@ -225,16 +228,7 @@ figure{
     bottom: 0px;
     background-color: #000;
 }
-/* Call to action */
-/* .call-to-action{
-    width: 180px;
-    position: absolute;
-    bottom: 100px;
-} */
-/* .action{
-    width: 100%;
-    position: relative;
-} */
+
 /* Installa App */
 .download-app{
     font-size: 16px;
@@ -243,8 +237,7 @@ figure{
     gap: 10px;
     margin-left: 10px;
     margin-bottom: 30px;
-    /* position: absolute;
-    bottom: 180px; */
+    
 }
 /* LINE */
 .line{
@@ -258,8 +251,7 @@ figure{
     display: flex;
     align-items: center;
     gap: 10px;
-    /* position: absolute;
-    bottom: 100px; */
+    
 }
 .profile-image{
     width: 40px;
@@ -298,8 +290,8 @@ figure{
 .container-song-player{
     min-width: 250px;
     min-height: 45px;
-    /* margin-left: 20px; */
     /* DEBUG */
+    /* margin-left: 20px; */
     /* background-color: #adff2f; */
 }
 .song-player{
@@ -371,8 +363,8 @@ figure{
 .container-volume-player{
     min-width: 250px;
     min-height: 45px;
-    /* margin-right: 20px; */
     /* DEBUG */
+    /* margin-right: 20px; */
     /* background-color: #fff; */
 }
 .volume-player{
