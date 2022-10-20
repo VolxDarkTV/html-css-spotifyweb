@@ -101,12 +101,13 @@ main{
     display: flex;
     justify-content: space-between;
     min-width: 100%;
+    gap: 20px;
     /* DEBUG */
-    height: 200px;
-    background-color: #adff2f;
+    /* height: 200px; */
+    /* background-color: #adff2f; */
 }
 .music-square{
-    max-width: 200px;
+    max-width: 260px;
     max-height: 100%;
     /* DEBUG */
     background-color: rgb(163, 56, 56);
