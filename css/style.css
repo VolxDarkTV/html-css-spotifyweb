@@ -29,7 +29,7 @@ main{
     width: calc(100vw - 200px);
     height: 80px;
     position: fixed;
-    /* DEBUG */
+    z-index: 200;
     background-color: rgb(8, 11, 18, 0.4);
 }
 #upgrade-button{
@@ -49,7 +49,7 @@ main{
     color: #fff;
     background-color: #141922;
     /* DEBUG */
-    height: 900px;
+    /* height: 900px; */
 }
 /* Song NavBar */
 .container-song-nav-bar{
@@ -97,11 +97,16 @@ main{
 .square-container{
     margin-top: 20px;
 }
+.sub-title{
+    font-weight: bold;
+    color: #7d7f84;
+}
 .song-square-container{
     display: flex;
     justify-content: space-between;
     min-width: 100%;
     gap: 20px;
+    margin-top: 30px;
     /* DEBUG */
     /* height: 200px; */
     /* background-color: #adff2f; */
@@ -112,15 +117,31 @@ main{
     /* DEBUG */
     /* background-color: rgb(163, 56, 56); */
 }
+
 .music-cover{
     width: 100%;
+    position: relative;
 }
 .music-square img{
     width: 100%;
 }
-.music-square img:hover{
+.music-cover img:hover{
     filter: brightness(40%);
 }
+
+.square-play{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.music-cover:hover .square-play{
+    display: block;
+}
+
 /* SONG-TEXT */
 .song-text{
     text-align: center;
@@ -133,6 +154,20 @@ main{
 .song-text span{
     color: #7d7f84;
 }
+
+/* Second Square Container */
+.second-song-square-container{
+    justify-content: flex-start;
+}
+
+/* Third Square Container */
+.radius-music-cover{
+    border-radius: 50%;
+}
+.radius-music-cover img{
+    border-radius: 50%;
+}
+
 /* NavBar */
 .nav-bar{
     min-width: 200px;
@@ -267,6 +302,7 @@ figure{
     width: 100%;
     object-fit: contain;
 }
+
 
 
 
