@@ -21,6 +21,7 @@ main{
     /* DEBUG */
     background-color: #adff2f;
 }
+/* UPGRADE SECTION/BUTTON */
 .upgrade-section{
     display: flex;
     align-items: center;
@@ -41,7 +42,8 @@ main{
     text-decoration: none;
     color: #fff;
 }
-.song-library{
+/* Song ViewPort */
+.song-view{
     width: 100%;
     padding-top: 80px;
     color: #fff;
@@ -49,8 +51,46 @@ main{
     /* DEBUG */
     height: 900px;
 }
+/* Song NavBar */
+.container-song-nav-bar{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 50px;
+    margin: 0 auto;
+    color: #000;
+    /* background-color: #fff; */
+}
+.song-nav-bar{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
 
 
+.li-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bottom-bar{
+    
+    width: 0%;
+    height: 2px;
+    background-color: #adff2f;
+    transition: all 0.1s ease;
+}
+.li-container:hover .bottom-bar{
+    display: block;
+    width: 50%;
+}
+
+
+.song-nav-bar a{
+    font-weight: bold;
+    color: #7d7f84;
+    text-decoration: none;
+}
 /* NavBar */
 .nav-bar{
     min-width: 200px;
