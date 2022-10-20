@@ -37,11 +37,13 @@ main{
     padding: 10px 40px;
     border: solid white 1px;
     border-radius: 20px;
+    cursor: pointer;
 }
 #upgrade-button a{
     text-decoration: none;
     color: #fff;
 }
+
 /* Song ViewPort */
 .song-view{
     width: 100%;
@@ -73,6 +75,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.li-container a:hover{
+    color: #fff;
 }
 .bottom-bar{
     
@@ -121,6 +126,8 @@ main{
 .music-cover{
     width: 100%;
     position: relative;
+    cursor: pointer;
+    
 }
 .music-square img{
     width: 100%;
@@ -192,6 +199,12 @@ figure{
     margin: 30px 0px;
     color: #d2d2d2;
 }
+#function-bar p{
+    cursor: pointer;
+}
+#function-bar p:hover{
+    color: #fff;
+}
 .point-marker{
     max-width: 10%;
     min-height: 40px;
@@ -238,13 +251,21 @@ figure{
     align-items: center;
     margin-top: 10px;
     color: #717171;
+    cursor: pointer;
+}
+.create-new-playlist:hover{
+    color: #fff;
 }
 .create-new-playlist i{
     font-size: 40px;
-    color: #a3a3a3;
 }
+
 .nav-bar-playlist-name{
     color: #717171;
+    cursor: pointer;
+}
+.nav-bar-playlist-name:hover{
+    color: #fff;
 }
 .your-playlist{
     display: flex;
@@ -257,11 +278,15 @@ figure{
 
 
 .end-nav-bar{
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-bottom: 10px;
     position: absolute;
     bottom: 0px;
     background-color: #000;
+    /* DEBUG */
+    /* width: 90%; */
 }
 
 /* Installa App */
@@ -272,7 +297,11 @@ figure{
     gap: 10px;
     margin-left: 10px;
     margin-bottom: 30px;
-    
+    color: #717171;
+    cursor: pointer;
+}
+.download-app:hover{
+    color: #fff;
 }
 /* LINE */
 .line{
@@ -351,8 +380,15 @@ figure{
     margin-left: 10px;
     color: #fff;
 }
-.song-title h5{
+.song-title a{
+    text-decoration: none;
+    font-weight: bold;
     color: #6f6f6f;
+    cursor: pointer;
+}
+.song-title a:hover{
+    text-decoration: underline;
+    color: #fff;
 }
 /* Song like */
 .song-like{
@@ -364,7 +400,14 @@ figure{
     /* DEBUG */
     /* background-color: #fff; */
 }
-
+.song-like .fa-heart:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.song-like .fa-folder:hover{
+    color: #fff;
+    cursor: pointer;
+}
 
 /* Player */
 .container-player{
@@ -379,6 +422,13 @@ figure{
     gap: 30px;
     font-size: 25px;
     color: #fff;
+}
+.player .fa-circle-play{
+    transition: all 0.1s ease;
+}
+.player .fa-circle-play:hover{
+    font-size: 30px;
+    cursor: pointer;
 }
 .time-line{
     display: flex;
