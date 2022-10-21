@@ -16,9 +16,10 @@ body{
 }
 /* Main */
 main{
-    width: 100vw;
+    flex-grow: 1;
     overflow: auto;
     /* DEBUG */
+    /* width: 100vw; */
     background-color: #adff2f;
 }
 /* UPGRADE SECTION/BUTTON */
@@ -117,7 +118,7 @@ main{
     /* background-color: #adff2f; */
 }
 .music-square{
-    max-width: calc(100% / 6 - 40px);
+    width: calc(100% / 6 - 20px);
     max-height: 100%;
     /* DEBUG */
     /* background-color: rgb(163, 56, 56); */
@@ -132,7 +133,7 @@ main{
 .music-square img{
     width: 100%;
 }
-.music-cover img:hover{
+.music-cover:hover{
     filter: brightness(40%);
 }
 
