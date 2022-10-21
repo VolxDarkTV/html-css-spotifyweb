@@ -59,14 +59,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
     margin: 20px auto;
     color: #000;
+    /* height: 50px; */
     /* background-color: #fff; */
 }
 .song-nav-bar{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     list-style-type: none;
 }
@@ -184,7 +185,6 @@ main{
     padding: 20px;
     background-color: #000;
     font-weight: bold;
-    /* DEBUG */
     color: #fff;
     position: relative;
 }
@@ -338,7 +338,10 @@ figure{
     object-fit: contain;
 }
 
-
+/* Smartphone NavBar */
+.smartphone-nav-bar{
+    display: none;
+}
 
 
 /* Tool Bar */
@@ -347,6 +350,7 @@ figure{
     justify-content: space-between;
     align-items: center;
     width: 100vw;
+    height: 90px;
     max-height: 90px;
     background-color: #282828;
     z-index: 500;
@@ -359,9 +363,9 @@ figure{
 
 /* song player */
 .container-song-player{
-    min-width: 250px;
-    min-height: 45px;
+    min-width: 20%;
     /* DEBUG */
+    /* min-height: 45px; */
     /* margin-left: 20px; */
     /* background-color: #adff2f; */
 }
@@ -418,8 +422,8 @@ figure{
 /* Player */
 .container-player{
     min-width: 35%;
-    min-height: 70px;
     /* DEBUG */
+    /* min-height: 80%; */
     /* background-color: #ffb62f; */
 }
 .player{
@@ -439,6 +443,7 @@ figure{
 .time-line{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 25px;
     gap: 20px;
 }
@@ -454,15 +459,20 @@ figure{
 /* Volume Player */
 .container-volume-player{
     min-width: 250px;
-    min-height: 45px;
     /* DEBUG */
+    /* min-height: 50%; */
     /* margin-right: 20px; */
     /* background-color: #fff; */
+}
+.container-volume-player-width{
+    min-width: 20%;
 }
 .volume-player{
     display: flex;
     align-items: center;
-    min-height: 45px;
+    gap: 15px;
+    /* DEBUG */
+    /* min-height: 45px; */
 }
 /* Function Icon */
 .function-icon{
@@ -472,15 +482,13 @@ figure{
 }
 /* Volume Bar */
 .volume-setting-player{
-    min-width: 150px;
+    width: 100%;
     height: 5px;
     background-color: #6f6f6f;
     border-radius: 40px;
     cursor: pointer;
 }
-.volume-setting-player-margin{
-    margin-left: 10px;
-}
+
 .volume-bar{
     display: flex;
     align-items: center;
@@ -501,3 +509,4 @@ figure{
 .volume-setting-player:hover .volume-bar-move{
     display: block;
 }
+

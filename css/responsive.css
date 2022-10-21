@@ -17,14 +17,40 @@
         width: calc(100% / 3 - 20px);
     }
 }
-/* tablet 760px */
-@media screen and (max-width: 760px) {
+/* tablet 790px */
+@media screen and (max-width: 790px) {
     .music-square{
         width: calc(100% / 2 - 20px);
     }
+    .song-like{
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
 }
 /* smartphone 590px */
 @media screen and (max-width: 590px) {
+    .nav-bar{
+        display: none;
+    }
+    .smartphone-nav-bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        padding: 20px;
+        background-color: #000;
+        font-weight: bold;
+        color: #fff;
+        position: relative;
+    }
+    #function-bar{
+        width: 80%;
+    }
+    /* Big Icon */
+    .function-bar-icon{
+        max-width: 100%;
+    }
     .music-square{
         width: calc(100% / 1 - 20px);
     }
