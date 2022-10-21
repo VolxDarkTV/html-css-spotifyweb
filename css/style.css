@@ -109,10 +109,11 @@ main{
 }
 .song-square-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     min-width: 100%;
     gap: 20px;
     margin-top: 30px;
+    flex-wrap: wrap;
     /* DEBUG */
     /* height: 200px; */
     /* background-color: #adff2f; */

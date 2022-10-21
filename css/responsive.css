@@ -1,0 +1,31 @@
+/* desktop 1250px */
+@media screen and (max-width: 1250px) {
+    .music-square{
+        width: calc(100% / 5 - 20px);
+    }
+    
+}
+/* desktop 1100px */
+@media screen and (max-width: 1100px) {
+    .music-square{
+        width: calc(100% / 4 - 20px);
+    }
+}
+/* desktop 930px */
+@media screen and (max-width: 930px) {
+    .music-square{
+        width: calc(100% / 3 - 20px);
+    }
+}
+/* tablet 760px */
+@media screen and (max-width: 760px) {
+    .music-square{
+        width: calc(100% / 2 - 20px);
+    }
+}
+/* smartphone 590px */
+@media screen and (max-width: 590px) {
+    .music-square{
+        width: calc(100% / 1 - 20px);
+    }
+}
