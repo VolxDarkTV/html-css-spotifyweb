@@ -214,7 +214,7 @@ figure{
     transition: all 0.1s ease;
 }
 .function-bar-li:hover .point-marker{
-    height: 70%;
+    height: 100%;
 }
 #function-bar li{
     display: flex;
